@@ -1,0 +1,148 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    @media (max-width: 1024px){
+        margin-top: 24px;
+    }
+    
+}
+.pagination__inner{
+    
+    width: 100%;
+
+    .btn-green{
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.pagination__pages{
+    display: flex;
+    justify-content: center;
+    
+    gap: 10px;
+
+    @media (max-width: 480px){
+        flex-wrap: wrap;
+    }
+
+
+    @media (max-width: 365px){
+       justify-content: space-between;
+    }
+}
+
+
+.pagination__links{
+    display: flex;
+    justify-content: center;
+    
+    gap: 10px;
+
+    @media (max-width: 480px){
+        width: 100%;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    
+}
+
+.pagination__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+    transition: 300ms;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 18, 62, 0.1);
+    transition: 300ms;
+    
+    path{
+        stroke: rgba(203, 212, 224, 1);
+        transition: 300ms;
+    }
+
+    &[href]{
+        path{
+            stroke: #214BCE;
+        }
+
+        &:hover{
+            background: #214BCE;
+            path{
+                stroke: #fff;
+            }
+        }
+
+        &:active{
+            background: #fff;
+            path{
+                stroke: #00123E;
+            }
+        }
+    }
+}
+
+.pagination__link{
+    font-weight: 400;
+    font-size: 16px;
+    
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+    transition: 300ms;
+    background-color: #214BCE;;
+    color: #fff;
+    &[href]{
+        color: #000;
+        background-color: transparent;
+    }
+
+    &[href]:hover{
+        
+    }
+
+    @media (max-width: 365px){
+        margin: 0 4px;
+    }
+}
+
+.pagination__gap{
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+}
+
+.pagination__nav-container{
+    
+    @media (max-width: 480px){
+        width: calc(50% - 10px);
+        &:first-of-type{
+            order: 2;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &:last-of-type{
+            order: 3;
+        }
+    }
+    
+}

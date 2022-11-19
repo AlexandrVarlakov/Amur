@@ -1,0 +1,103 @@
+.s-lightning{
+    @media (max-width: 480px){
+        display: none;
+    }
+}
+
+
+.lightning{
+    padding: .5rem 0rem .5rem .5rem;
+    background: #214BCE;
+    border-radius: .375rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 700px){
+        padding: .625rem 0rem .625rem .625rem;
+    }
+
+    @media(min-width: 1920px){
+        padding: 0.42vw 0rem 0.42vw 0.42vw;
+    }
+}
+
+.lightning__badge{
+    padding: .5rem .75rem;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: .875rem;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+    color: #00123E;
+    border-radius: 100px;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+
+    @media (max-width: 1024px){
+        padding: .375rem .75rem;
+        font-size: .6875rem;
+    }
+
+    @media (max-width: 700px){
+        display: none;
+    }
+
+    @media (min-width: 1920px){
+        padding: 0.42vw 0.63vw;
+        font-size: 0.73vw;
+        margin-right: 1.25vw;
+    }
+}
+
+.lightning__tape{
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.lightning__tape--inner{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.tickercontainer{
+    display: flex;
+    align-items: center;
+}
+
+
+.lightning__message{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+    margin-left: 1.5rem;
+    white-space: nowrap;
+    @media (min-width: 1920px){
+        font-size:  0.83vw;;
+        margin-left: 1.25vw;
+    }
+
+    @media (max-width: 680px){
+        font-size: 15px;
+    }
+}
+
+.lightning__icon{
+    width: .75rem;
+    height: 1rem;
+    margin-right: .625rem;
+
+    @media (min-width: 1920px){
+        width: 0.63vw;
+        height: 0.83vw;
+        margin-right: 0.52vw;
+    }
+}
+
+
