@@ -1,0 +1,55 @@
+
+.article-info{
+	display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.article-info__categories{
+	display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.article-info__category{
+	font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 0.01rem;
+    text-transform: uppercase;
+    color: #214BCE;
+    
+    transition: 300ms;
+
+    &:hover{
+        color:  #00123E;
+    }
+}
+
+.article-info__views, .article-info__comments{
+	display: flex;
+    align-items: center;
+    margin-left: 10px;
+    span{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 145%;
+        color: #9DB1D8;
+        transition: 300ms;
+        display: inline-block;
+        margin-left: 4px;
+    }
+
+    path{
+        transition: 300ms;
+    }
+
+}
+
+.article-info__comments{
+	&:hover{
+        span{
+            color: #214BCE;;
+        }
+        path{
+            fill: #214BCE;;
+        }
+    }
+}

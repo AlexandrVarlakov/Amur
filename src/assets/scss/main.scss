@@ -308,6 +308,9 @@ ul{
 }
 
 
+
+
+
 .black{
 	color: #000000;
 }
@@ -335,6 +338,10 @@ ul{
 @import 'units/components/news/breaking-news';
 @import 'units/components/pagination/pagination';
 @import 'units/components/contact-us/contact-us';
+@import 'units/components/article-info/article-info';
+
+@import 'units/components/grid-news/block-news';
+
 @import 'units/pages/news-list/news-list';
 @import 'lightpick.scss';
 
