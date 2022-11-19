@@ -308,8 +308,33 @@ ul{
 }
 
 
+.text{
+	
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #00123E;
+	white-space: pre-line;
 
+	@media (max-width: 480px){
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 150%;
+	}
 
+	
+}
+
+.padding-content{
+
+	@media (min-width: 1025px){
+		padding: 0 calc(0.0625rem + ((1vw - 10.25px) * 18.2609));;
+	}
+	@media (min-width: 1600px){
+		padding: 0 6.625vw;
+	}
+
+}
 
 .black{
 	color: #000000;
@@ -339,10 +364,12 @@ ul{
 @import 'units/components/pagination/pagination';
 @import 'units/components/contact-us/contact-us';
 @import 'units/components/article-info/article-info';
+@import 'units/components/other-news/other-news';
 
 @import 'units/components/grid-news/block-news';
 
 @import 'units/pages/news-list/news-list';
+@import 'units/pages/privacy-politic/privacy-politic';
 @import 'lightpick.scss';
 
 

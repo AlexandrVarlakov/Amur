@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Краткое описание страницы"/>
+    <title>Сайт</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/choices.min.css">     
+    <link rel="stylesheet" href="assets/css/main.min.css">     
+    
+    
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <a href="#" class="logo">
+            <img src="assets/img/logo.svg" alt="">
+        </a>
+
+        <ul class="dmenu">
+            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Общество</a></li>
+            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Власть</a></li>
+            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Культура</a></li>
+            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Новости партнёров</a></li>
+            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Происшествия</a></li>
+            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Россия и мир</a></li>
+            <li class="dmenu__item dmenu__item_dots">
+                <button class="btn-dotts-menu">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 11C4 12.1046 3.10457 13 2 13C0.89543 13 0 12.1046 0 11C0 9.89543 0.89543 9 2 9C3.10457 9 4 9.89543 4 11Z" fill="white"/>
+                        <path d="M12 11C12 12.1046 11.1046 13 10 13C8.89543 13 8 12.1046 8 11C8 9.89543 8.89543 9 10 9C11.1046 9 12 9.89543 12 11Z" fill="white"/>
+                        <path d="M20 11C20 12.1046 19.1046 13 18 13C16.8954 13 16 12.1046 16 11C16 9.89543 16.8954 9 18 9C19.1046 9 20 9.89543 20 11Z" fill="white"/>
+                    </svg>
+                </button>
+                
+            </li>
+            
+        </ul>
+
+
+        <div class="header__deep-nav">
+            <button class="search-btn" >
+                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-btn__icon">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62074 0.5C4.30735 0.5 0 4.8456 0 10.2062C0 15.5667 4.30735 19.9123 9.62074 19.9123C11.7392 19.9123 13.6978 19.2215 15.2872 18.051C15.3321 18.1409 15.3918 18.2251 15.4662 18.3002L18.3558 21.2154C18.7319 21.5949 19.3417 21.5949 19.7179 21.2154C20.094 20.8359 20.094 20.2206 19.7179 19.8412L16.8284 16.926C16.7817 16.8789 16.7315 16.8377 16.6785 16.8023C18.2691 15.0709 19.2415 12.7531 19.2415 10.2062C19.2415 4.8456 14.9341 0.5 9.62074 0.5ZM1.92635 10.2062C1.92635 5.91894 5.37124 2.44346 9.62074 2.44346C13.8702 2.44346 17.3151 5.91894 17.3151 10.2062C17.3151 14.4934 13.8702 17.9689 9.62074 17.9689C5.37124 17.9689 1.92635 14.4934 1.92635 10.2062Z" fill="white"/>
+                </svg>
+
+                <div class="search-btn__close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+
+            <button class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div class="header__dotts-menu-container">
+        <ul class="dmenu dmenu_bottom">
+            <li class="dmenu__item "><a href="#" class="dmenu__link">Видео</a></li>
+            <li class="dmenu__item "><a href="#" class="dmenu__link">Свет, тепло, квитанции</a></li>
+            <li class="dmenu__item "><a href="#" class="dmenu__link">PRO  Жизнь</a></li>
+            <li class="dmenu__item "><a href="#" class="dmenu__link">Лонгриды</a></li>
+        </ul>
+    </div>
+
+    <div class="header__hamburger-menu-container">
+        <ul class="dmenu dmenu_bottom">
+            <li class="dmenu__item "><a href="#" class="dmenu__link">О нас</a></li>
+            <li class="dmenu__item "><a href="#" class="dmenu__link">Прайс-лист</a></li>
+            <li class="dmenu__item "><a href="#" class="dmenu__link">Правила использования</a></li>
+            <li class="dmenu__item "><a href="#" class="dmenu__link">Контакты</a></li>
+        </ul>
+    </div>
+
+
+    <div class="header__search-container">
+        <form action="#" class="header__search-form">
+
+            <input type="text" name="search-string" class="header__search-input" placeholder="Поиск по сайту">
+            <button class="transparent-btn search-send" disabled>Найти</button>
+        </form>
+    </div>
+
+</header>
+
+
+<nav class="mob-menu">
+    <div class="mob-menu__inner">
+        <div class="mob-menu__menus">
+
+
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Общество</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Власть</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Культура</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Новости партнёров</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Происшествия</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Россия и Мир</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Видео</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Свет, тепло, квитанции</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">PRO Жизнь</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Лонгриды</a></li>
+                
+            </ul>
+
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">О нас</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Прайс-лист</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Правила использования</a></li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакты</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="mob-menu__contacts">
+            <div class="mob-menu__socials">
+                <a href="#" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0025 2H11.9975C6.48375 2 2 6.485 2 12C2 14.1875 2.705 16.215 3.90375 17.8613L2.6575 21.5763L6.50125 20.3475C8.0825 21.395 9.96875 22 12.0025 22C17.5162 22 22 17.5137 22 12C22 6.48625 17.5162 2 12.0025 2ZM17.8212 16.1212C17.58 16.8025 16.6225 17.3675 15.8587 17.5325C15.3362 17.6437 14.6537 17.7325 12.3562 16.78C9.4175 15.5625 7.525 12.5762 7.3775 12.3825C7.23625 12.1887 6.19 10.8013 6.19 9.36625C6.19 7.93125 6.91875 7.2325 7.2125 6.9325C7.45375 6.68625 7.8525 6.57375 8.235 6.57375C8.35875 6.57375 8.47 6.58 8.57 6.585C8.86375 6.5975 9.01125 6.615 9.205 7.07875C9.44625 7.66 10.0337 9.095 10.1037 9.2425C10.175 9.39 10.2463 9.59 10.1463 9.78375C10.0525 9.98375 9.97 10.0725 9.8225 10.2425C9.675 10.4125 9.535 10.5425 9.3875 10.725C9.2525 10.8838 9.1 11.0538 9.27 11.3475C9.44 11.635 10.0275 12.5937 10.8925 13.3637C12.0087 14.3575 12.9137 14.675 13.2375 14.81C13.4787 14.91 13.7662 14.8863 13.9425 14.6988C14.1662 14.4575 14.4425 14.0575 14.7237 13.6638C14.9237 13.3813 15.1763 13.3462 15.4413 13.4462C15.7113 13.54 17.14 14.2462 17.4338 14.3925C17.7275 14.54 17.9212 14.61 17.9925 14.7338C18.0625 14.8575 18.0625 15.4387 17.8212 16.1212Z" fill="#9DB1D8"/>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23 0.708721L19.3622 19.1676C19.3622 19.1676 18.8537 20.4475 17.4543 19.8331L9.02199 13.3376C10.1554 12.3122 18.948 4.35637 19.3325 3.99559C19.9269 3.43722 19.5581 3.10492 18.8672 3.5272L5.87968 11.828L0.869051 10.1303C0.869051 10.1303 0.0802161 9.84865 0.00429753 9.23422C-0.0720703 8.6198 0.894657 8.28705 0.894657 8.28705L21.3213 0.222246C21.3213 0.222246 23 -0.520124 23 0.708721V0.708721Z" fill="#9DB1D8"/>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3763 0.477893C22.4096 0.741298 23.2216 1.51458 23.4982 2.49859C23.998 4.28034 24 8 24 8C24 8 24 11.7197 23.4982 13.5014C23.2216 14.4854 22.4096 15.2587 21.3763 15.5221C19.5055 16 12 16 12 16C12 16 4.49456 16 2.62364 15.5221C1.59039 15.2587 0.778399 14.4854 0.501811 13.5014C0 11.7197 0 8 0 8C0 8 0 4.28034 0.501811 2.49859C0.778399 1.51458 1.59039 0.741298 2.62364 0.477893C4.49456 0 12 0 12 0C12 0 19.5055 0 21.3763 0.477893ZM15.8328 8.00032L9.59769 11.4283V4.57227L15.8328 8.00032Z" fill="#9DB1D8"/>
+                    </svg>                            
+                </a>
+                <a href="#" target="_blank">
+                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2127 15.5C5.10543 15.5 0.187149 9.86 0 0.5H4.10231C4.22957 7.3775 7.35122 10.2875 9.74672 10.8875V0.5H13.6843V6.4325C15.9975 6.1775 18.4155 3.4775 19.224 0.5H23.1017C22.4804 4.16 19.8453 6.86 17.9888 7.9775C19.4608 8.7396 20.7565 9.80305 21.7921 11.0989C22.8276 12.3948 23.5798 13.8942 24 15.5H19.7405C18.8422 12.65 16.6413 10.4375 13.6843 10.1375V15.5H13.2127Z" fill="#9DB1D8"/>
+                    </svg>
+                        
+                </a>
+                <a href="#" target="_blank">
+                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.202561 11.8075C-0.359354 12.9121 0.278644 13.4401 1.73431 14.3421C2.9718 15.1066 4.68138 15.3862 5.77954 15.498C5.32946 15.9307 7.39195 13.947 1.45197 19.6606C0.192478 20.8678 2.22014 22.8048 3.47872 21.6232L6.88595 18.3369C8.19036 19.5918 9.44069 20.7945 10.2932 21.6278C11.5527 22.8139 13.5794 20.8935 12.3337 19.6652C12.2402 19.5763 7.71645 15.2368 7.99236 15.5026C9.10428 15.3908 10.7882 15.0947 12.011 14.3467L12.0101 14.3458C13.4658 13.4392 14.1038 12.9121 13.5501 11.8075C13.2155 11.1805 12.3135 10.6562 11.1127 11.5628C11.1127 11.5628 9.49111 12.8049 6.87587 12.8049C4.25971 12.8049 2.63905 11.5628 2.63905 11.5628C1.43914 10.6516 0.533476 11.1805 0.202561 11.8075Z" fill="#9DB1D8"/>
+                        <path d="M6.87404 11.1301C10.0622 11.1301 12.6655 8.63864 12.6655 5.57148C12.6655 2.49149 10.0622 0 6.87404 0C3.68497 0 1.08164 2.49149 1.08164 5.57148C1.08164 8.63864 3.68497 11.1301 6.87404 11.1301ZM6.87404 2.82241C8.44061 2.82241 9.71844 4.05165 9.71844 5.57148C9.71844 7.07847 8.44061 8.30772 6.87404 8.30772C5.30746 8.30772 4.02963 7.07847 4.02963 5.57148C4.02871 4.05074 5.30654 2.82241 6.87404 2.82241Z" fill="#9DB1D8"/>
+                    </svg>
+                        
+                </a>
+            </div>
+            
+                <button class="transparent-btn small">Связаться с нами</button>
+            
+            
+        </div>
+    </div>
+</nav>
+    
+    <main>
+        <section class="section s-widtget-section">
+    <div class="section__inner">
+       <ul class="top-widget">
+           <li class="weather">
+               <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="top-widget__termometr">
+                   <path d="M6.66666 9.01853V2.66666C6.66666 1.19391 5.47275 0 4 0C2.52725 0 1.33334 1.19391 1.33334 2.66666V9.0185C0.515 9.75094 0 10.8153 0 12C0 14.2092 1.79087 16 4 16C6.20913 16 8 14.2092 8 12C8 10.8153 7.485 9.75094 6.66666 9.01853ZM4 14.6667C2.52725 14.6667 1.33334 13.4727 1.33334 12C1.33334 11.2301 1.65962 10.5159 2.22256 10.012L2.66669 9.61453V2.66666C2.66669 1.93028 3.26366 1.33331 4.00003 1.33331C4.73641 1.33331 5.33337 1.93025 5.33337 2.66666V9.61453L5.7775 10.012C6.34044 10.5159 6.66672 11.2301 6.66672 12C6.66666 13.4727 5.47275 14.6667 4 14.6667Z" fill="#9DB1D8"/>
+                   <path d="M4.66668 5.33334H3.33333V13.3333H4.66668V5.33334Z" fill="#9DB1D8"/>
+                   <path d="M4 14C5.10457 14 6 13.1046 6 12C6 10.8954 5.10457 10 4 10C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14Z" fill="#9DB1D8"/>
+               </svg>
+               <span class="top-widget__value">+15,3°</span>    
+           </li>
+           <li>
+               <span class="top-widget__currency">$</span>
+               <span class="top-widget__value">61,39</span>
+           </li>
+           <li>
+               <span class="top-widget__currency">€</span>
+               <span class="top-widget__value">57,34</span>
+           </li>
+           <li>
+               <span class="top-widget__currency">¥</span>
+               <span class="top-widget__value">8,31</span>
+           </li>
+       </ul>
+
+
+       <div class="top-contacts">
+           <ul class="top-contacts__socials">
+               <a href="#" target="_blank">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12.0025 2H11.9975C6.48375 2 2 6.485 2 12C2 14.1875 2.705 16.215 3.90375 17.8613L2.6575 21.5763L6.50125 20.3475C8.0825 21.395 9.96875 22 12.0025 22C17.5162 22 22 17.5137 22 12C22 6.48625 17.5162 2 12.0025 2ZM17.8212 16.1212C17.58 16.8025 16.6225 17.3675 15.8587 17.5325C15.3362 17.6437 14.6537 17.7325 12.3562 16.78C9.4175 15.5625 7.525 12.5762 7.3775 12.3825C7.23625 12.1887 6.19 10.8013 6.19 9.36625C6.19 7.93125 6.91875 7.2325 7.2125 6.9325C7.45375 6.68625 7.8525 6.57375 8.235 6.57375C8.35875 6.57375 8.47 6.58 8.57 6.585C8.86375 6.5975 9.01125 6.615 9.205 7.07875C9.44625 7.66 10.0337 9.095 10.1037 9.2425C10.175 9.39 10.2463 9.59 10.1463 9.78375C10.0525 9.98375 9.97 10.0725 9.8225 10.2425C9.675 10.4125 9.535 10.5425 9.3875 10.725C9.2525 10.8838 9.1 11.0538 9.27 11.3475C9.44 11.635 10.0275 12.5937 10.8925 13.3637C12.0087 14.3575 12.9137 14.675 13.2375 14.81C13.4787 14.91 13.7662 14.8863 13.9425 14.6988C14.1662 14.4575 14.4425 14.0575 14.7237 13.6638C14.9237 13.3813 15.1763 13.3462 15.4413 13.4462C15.7113 13.54 17.14 14.2462 17.4338 14.3925C17.7275 14.54 17.9212 14.61 17.9925 14.7338C18.0625 14.8575 18.0625 15.4387 17.8212 16.1212Z" fill="#9DB1D8"/>
+                   </svg>
+               </a>
+               <a href="#" target="_blank">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M24 2.70872L20.3622 21.1676C20.3622 21.1676 19.8537 22.4475 18.4543 21.8331L10.022 15.3376C11.1554 14.3122 19.948 6.35637 20.3325 5.99559C20.9269 5.43722 20.5581 5.10492 19.8672 5.5272L6.87968 13.828L1.86905 12.1303C1.86905 12.1303 1.08022 11.8486 1.0043 11.2342C0.92793 10.6198 1.89466 10.287 1.89466 10.287L22.3213 2.22225C22.3213 2.22225 24 1.47988 24 2.70872V2.70872Z" fill="#9DB1D8"/>
+                       </svg>
+                       
+               </a>
+               <a href="#" target="_blank">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3763 4.47789C22.4096 4.7413 23.2216 5.51458 23.4982 6.49859C23.998 8.28034 24 12 24 12C24 12 24 15.7197 23.4982 17.5014C23.2216 18.4854 22.4096 19.2587 21.3763 19.5221C19.5055 20 12 20 12 20C12 20 4.49456 20 2.62364 19.5221C1.59039 19.2587 0.778399 18.4854 0.501811 17.5014C0 15.7197 0 12 0 12C0 12 0 8.28034 0.501811 6.49859C0.778399 5.51458 1.59039 4.7413 2.62364 4.47789C4.49456 4 12 4 12 4C12 4 19.5055 4 21.3763 4.47789ZM15.8328 12.0003L9.59769 15.4283V8.57227L15.8328 12.0003Z" fill="#9DB1D8"/>
+                   </svg>                                
+               </a>
+
+               
+               <a href="#" target="_blank">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M13.2127 20C5.10543 20 0.187149 14.36 0 5H4.10231C4.22957 11.8775 7.35122 14.7875 9.74672 15.3875V5H13.6843V10.9325C15.9975 10.6775 18.4155 7.9775 19.224 5H23.1017C22.4804 8.66 19.8453 11.36 17.9888 12.4775C19.4608 13.2396 20.7565 14.303 21.7921 15.5989C22.8276 16.8948 23.5798 18.3942 24 20H19.7405C18.8422 17.15 16.6413 14.9375 13.6843 14.6375V20H13.2127Z" fill="#9DB1D8"/>
+                       </svg>
+                       
+               </a>
+               <a href="#" target="_blank">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M5.20256 12.8075C4.64065 13.9121 5.27864 14.4401 6.73431 15.3421C7.9718 16.1066 9.68138 16.3862 10.7795 16.498C10.3295 16.9307 12.392 14.947 6.45197 20.6606C5.19248 21.8678 7.22014 23.8048 8.47872 22.6232L11.886 19.3369C13.1904 20.5918 14.4407 21.7945 15.2932 22.6278C16.5527 23.8139 18.5794 21.8935 17.3337 20.6652C17.2402 20.5763 12.7164 16.2368 12.9924 16.5026C14.1043 16.3908 15.7882 16.0947 17.011 15.3467L17.0101 15.3458C18.4658 14.4392 19.1038 13.9121 18.5501 12.8075C18.2155 12.1805 17.3135 11.6562 16.1127 12.5628C16.1127 12.5628 14.4911 13.8049 11.8759 13.8049C9.25971 13.8049 7.63905 12.5628 7.63905 12.5628C6.43914 11.6516 5.53348 12.1805 5.20256 12.8075Z" fill="#9DB1D8"/>
+                       <path d="M11.874 12.1301C15.0622 12.1301 17.6655 9.63864 17.6655 6.57148C17.6655 3.49149 15.0622 1 11.874 1C8.68497 1 6.08164 3.49149 6.08164 6.57148C6.08164 9.63864 8.68497 12.1301 11.874 12.1301ZM11.874 3.82241C13.4406 3.82241 14.7184 5.05165 14.7184 6.57148C14.7184 8.07847 13.4406 9.30772 11.874 9.30772C10.3075 9.30772 9.02963 8.07847 9.02963 6.57148C9.02871 5.05074 10.3065 3.82241 11.874 3.82241Z" fill="#9DB1D8"/>
+                   </svg>
+                       
+               </a>
+           </ul>
+
+           <a href="#" class="transparent-btn small">Связаться с нами</a>
+       </div>
+    </div>
+</section>
+<section class="section s-contact-us">
+    <div class="section__inner">
+        <button class="transparent-btn small">Связаться с нами</button>
+    </div>
+</section>
+<section class="section">
+   <div class="section__inner">
+       <a href="#" class="advert">
+            <picture>
+                <source srcset="assets/img/adverts/index/1-s.png" media="(max-width: 600px)" />
+                <source srcset="assets/img/adverts/index/1-m.png" media="(max-width: 1024px)" />
+                
+                <img src="assets/img/adverts/index/1.png" alt="">
+            </picture>
+       </a>
+   </div>
+</section>
+
+        <section class="section s-pages-list" >
+            <div class="section__inner">
+                
+                
+
+                <div class="block-with-aside_right">
+
+                    <div class="block-with-aside__content-col">
+
+                        
+                        
+                        
+
+                        <div class="p-politic">
+                            <div class="p-politic__text-block padding-content">
+                                
+                                <h1 class="h1 ">Политика конфиденциальности</h1>     
+                                <p class="text">Настоящая Политика конфиденциальности персональной информации (далее — Политика) действует в отношении всей информации, которую Общество с ограниченной ответственностью «ЕвроСтудио» и/или его аффилированные лица, могут получить о пользователе во время использования им сайта <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a> или его поддомена <a href="https://seo.eurostudio.ru" target="_blank">https://seo.eurostudio.ru</a> (далее — <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a>). 
+
+                                    Использование сайта <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a> означает безоговорочное согласие пользователя с настоящей Политикой и указанными в ней условиями обработки его персональной информации; в случае несогласия с этими условиями пользователь должен воздержаться от использования данного ресурса.</p>  
+                            </div>
+
+                            <div class="p-politic__text-block padding-content">
+                                
+                                <h3 class="h2">1. Персональная информация пользователей, которую получает и обрабатывает сайт <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a></h3>
+                                
+                                <p class="text">1.1. В рамках настоящей Политики под «персональной информацией пользователя» понимаются:
+
+                                    1.1.1. Персональная информация, которую пользователь предоставляет о себе самостоятельно при оставлении заявки, совершении покупки, регистрации (создании учётной записи) или в ином процессе использования сайта.
+                                    
+                                    1.1.2 Данные, которые автоматически передаются сайтом <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a> в процессе его использования с помощью установленного на устройстве пользователя программного обеспечения, в том числе IP-адрес, информация из cookie, информация о браузере пользователя (или иной программе, с помощью которой осуществляется доступ к сайту), время доступа, адрес запрашиваемой страницы.
+                                    
+                                    1.1.3. Данные, которые предоставляются сайту, в целях осуществления оказания услуг и/или продаже товара и/или предоставления иных ценностей для посетителей сайта, в соответствии с деятельностью настоящего ресурса:
+                                    
+                                    • имя
+                                    
+                                    • фамилия
+                                    
+                                    • электронная почта
+                                    
+                                    • телефон
+                                    
+                                    1.2. Настоящая Политика применима только к сайту <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a> и не контролирует и не несет ответственность за сайты третьих лиц, на которые пользователь может перейти по ссылкам, доступным на сайте <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a>. На таких сайтах у пользователя может собираться или запрашиваться иная персональная информация, а также могут совершаться иные действия.
+                                    
+                                    1.3. Сайт в общем случае не проверяет достоверность персональной информации, предоставляемой пользователями, и не осуществляет контроль за их дееспособностью. Однако сайт <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a> исходит из того, что пользователь предоставляет достоверную и достаточную персональную информацию по вопросам, предлагаемым в формах настоящего ресурса, и поддерживает эту информацию в актуальном состоянии.</p>
+                            </div>
+
+                            <div class="p-politic__text-block padding-content">
+                                <h3 class="h2">2. Цели сбора и обработки персональной информации пользователей</h3>
+                                <p class="text">2.1. Сайт собирает и хранит только те персональные данные, которые необходимы для оказания услуг и/или продаже товара и/или предоставления иных ценностей для посетителей сайта <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a>.
+
+                                    2.2. Персональную информацию пользователя можно использовать в следующих целях:
+                                    
+                                    2.2.1 Идентификация стороны в рамках соглашений и договоров с сайтом
+                                    
+                                    2.2.2 Предоставление пользователю персонализированных услуг и сервисов, товаров и иных ценностей
+                                    
+                                    2.2.3 Связь с пользователем, в том числе направление уведомлений, запросов и информации, касающихся использования сайта, оказания услуг, а также обработка запросов и заявок от пользователя
+                                    
+                                    2.2.4 Улучшение качества сайта, удобства его использования, разработка новых товаров и услуг
+                                    
+                                    2.2.5 Таргетирование рекламных материалов
+                                    
+                                    2.2.6 Проведение статистических и иных исследований на основе предоставленных данных
+                                    
+                                    2.2.7 Передача данных третьим лицам, в целях осуществления деятельности ресурса (например,
+                                    
+                                    доставка товара курьером, транспортной компанией и иные)
+                                    
+                                    2.2.8 Заключения, исполнения и прекращения гражданско-правовых договоров с физическими, юридическими лицами, индивидуальными предпринимателями и иными лицами, в случаях, предусмотренных действующим законодательством и/или Уставом предприятия</p>
+                            </div>
+
+                            <div class="p-politic__text-block padding-content">
+                                <h3 class="h2">3. Условия обработки персональной информации пользователя и её передачи третьим лицам</h3>
+                                <p class="text">3.1. Сайт <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a> хранит персональную информацию пользователей в соответствии с внутренними регламентами конкретных сервисов.
+
+                                    3.2. В отношении персональной информации пользователя сохраняется ее конфиденциальность, кроме случаев добровольного предоставления пользователем информации о себе для общего доступа неограниченному кругу лиц.
+                                    
+                                    3.3. Сайт <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a> вправе передать персональную информацию пользователя третьим лицам в следующих случаях:
+                                    
+                                    3.3.1. Пользователь выразил свое согласие на такие действия, путем согласия, выразившегося в предоставлении таких данных;
+                                    
+                                    3.3.2. Передача необходима в рамках использования пользователем определенного сайта <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a>, либо для предоставления товаров и/или оказания услуги пользователю;
+                                    
+                                    3.3.3. Передача предусмотрена российским или иным применимым законодательством в рамках установленной законодательством процедуры;
+                                    
+                                    3.4. При обработке персональных данных пользователей сайт <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.ru</a> руководствуется Федеральным законом РФ «О персональных данных».</p>
+                            </div>
+
+                            <div class="p-politic__text-block padding-content">
+                                <h3 class="h2">4. Изменение пользователем персональной информации</h3>
+                                <p class="text">4.1. Пользователь может в любой момент изменить (обновить, дополнить) предоставленную им персональную информацию или её часть, а также параметры её конфиденциальности, оставив заявление в адрес администрации по почте <a href="mailto:info@eurostudio.net">info@eurostudio.net</a>
+
+                                    4.2. Пользователь может в любой момент, отозвать свое согласие на обработку персональных данных, оставив заявление в адрес администрации сайта по почте <a href="mailto:info@eurostudio.net">info@eurostudio.net</a></p>
+                            </div>
+
+                            <div class="p-politic__text-block padding-content">
+                                <h3 class="h2">5. Меры, применяемые для защиты персональной информации Пользователей</h3>
+                                <p class="text">Сайт принимает необходимые и достаточные организационные и технические меры для защиты персональной информации пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий с ней третьих лиц.</p>
+                            </div>
+
+                            <div class="p-politic__text-block padding-content">
+                                <h3 class="h2">6. Изменение Политики конфиденциальности. Применимое законодательство</h3>
+                                <p class="text">6.1. Сайт имеет право вносить изменения в настоящую Политику конфиденциальности. При внесении изменений в актуальной редакции указывается дата последнего обновления. Новая редакция Политики вступает в силу с момента ее размещения, если иное не предусмотрено новой редакцией Политики. Действующая редакция всегда находится на странице по адресу <a href="https://www.eurostudio.ru" target="_blank">https://www.eurostudio.net/privacy_policy.htm</a>
+
+                                    6.2. К настоящей Политике и отношениям между пользователем и Сайтом, возникающим в связи с применением Политики конфиденциальности, подлежит применению право Российской Федерации.</p>
+                            </div>
+
+                            <div class="p-politic__text-block padding-content">
+                                <h3 class="h2">7. Обратная связь. Вопросы и предложения</h3>
+                                <p class="text">7.1. Все предложения или вопросы по поводу настоящей Политики следует направлять следующим способом:
+
+                                    Почта: <a href="mailto:info@eurostudio.net">info@eurostudio.net</a></p>
+                            </div>
+                            
+                            
+                        </div>
+
+                    </div>
+                    <div class="block-with-aside__aside-col block-with-aside__aside-col_news-list">
+                        <a href="#"  class="advert">
+                            <picture>
+                                <source srcset="assets/img/adverts/news-list/4-s.png" media="(max-width: 600px)" />
+                                <source srcset="assets/img/adverts/news-list/4-m.png" media="(max-width: 1024px)" />
+                                
+                                <img src="assets/img/adverts/news-list/4.png" alt="">
+                            </picture>
+                        </a>
+
+                        
+                        <div class="a-news-list hide-sm">
+                            <h3 class="title-category">Новости партнёров</h3>
+
+                            
+
+                            <div class="a-news-list__col">
+                                <div class="a-news-list__item">
+
+                                    <a class="a-news-list__img-block" href="#">
+                                        <div class="a-news-list__img-block--inner">
+                                            <img src="assets/img/aside/1.png" alt="" class="a-news-list__img">
+                                        </div>
+                                    </a>
+
+                                    <a  href="#" class="news-date">сегодня, 16:40</a>
+                                    <a href="#" class="a-news-list__text">ВТБ перезапускает вклад для физлиц в юанях</a>
+                                </div>
+
+                                <div class="a-news-list__item">
+                                    <a  href="#" class="news-date">сегодня, 16:40</a>
+                                    <a href="#" class="a-news-list__text">Предприниматели теперь могут узнать лимит кредитования в Сбербанке всего за пять минут</a>
+                                </div>
+
+                                <div class="a-news-list__item">
+                                    <a  href="#" class="news-date">сегодня, 16:40</a>
+                                    <a href="#" class="a-news-list__text">«sChOOL-МЕДИА» для старшеклассников пройдет в АмГУ</a>
+                                </div>
+
+                                <a href="#" class="a-news-list__all-links">+ все материалы</a>    
+                            </div>
+                            
+                        </div>
+                        <a href="#"  class="advert">
+                            <picture>
+                                <source srcset="assets/img/adverts/news-list/5-s.png" media="(max-width: 600px)" />
+                                <source srcset="assets/img/adverts/news-list/5-m.png" media="(max-width: 1024px)" />
+                                
+                                <img src="assets/img/adverts/news-list/5.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section s-other-news">
+            <div class="section__inner">
+                <h2 class="title-category">Другие новости</h2>
+                <div class="other-news">
+                    <div class="a-img-link" >
+                        <div class="a-img-link__inner">
+                            <div class="a-img-link__content">
+                                <img class="a-img-link__img" src="assets/img/aside/3.png"/>
+
+                                
+                                <div class="a-img-link__text-content">
+                                    
+                                    <div class="a-img-link__title-block">                                        
+                                        <a class="h3" href="#">Психолог Яна Арутюнян-Кольцова: «Советую не читать новостную ленту»</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-img-link" >
+                        <div class="a-img-link__inner">
+                            <div class="a-img-link__content">
+                                <img class="a-img-link__img" src="assets/img/aside/4.png"/>
+                                <div class="a-img-link__text-content">
+                                    <div class="a-img-link__title-block">                                        
+                                        <a class="h3" href="#">Ко Дню пожилых: о здоровом старении рассказал врач-гериатр Виктор Бардов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-img-link" >
+                        <div class="a-img-link__inner">
+                            <div class="a-img-link__content">
+                                <img class="a-img-link__img" src="assets/img/aside/3.png"/>
+
+                                
+                                <div class="a-img-link__text-content">
+                                    
+                                    <div class="a-img-link__title-block">                                        
+                                        <a class="h3" href="#">Психолог Яна Арутюнян-Кольцова: «Советую не читать новостную ленту»</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-img-link" >
+                        <div class="a-img-link__inner">
+                            <div class="a-img-link__content">
+                                <img class="a-img-link__img" src="assets/img/aside/4.png"/>
+                                <div class="a-img-link__text-content">
+                                    <div class="a-img-link__title-block">
+                                        
+                                        <a class="h3" href="#">Ко Дню пожилых: о здоровом старении рассказал врач-гериатр Виктор Бардов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+
+    
+    
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__1st-col">
+            <a href="#" class="footer__logo">
+                <img src="assets/img/light-logo.svg" alt="">
+            </a>
+
+            <div class="footer__old-rating">
+                <img src="assets/img/rating.svg" alt="">
+            </div>
+        </div>
+        <div class="footer__2st-col">
+                <div class="footer__contact">Редакция ИА «Амур.инфо»:
+                    <a href="tel:+79145946625">+7 914 594-66-25</a>, <a href="tel:(4162)771128">(4162) 77-11-28</a> 
+                    <a href="mailto:info@amur.info" class="mail-link">info@amur.info</a></div>
+                <div class="footer__contact">Размещение рекламы:
+                    <a href="tel:+74162222444">(4162) 222-444</a>, <a href="tel:+79145613373">+79145613373</a> 
+                    <a href="mailto:reklama@amur.info" class="mail-link">reklama@amur.info</a></div>
+                
+        </div>
+        
+        <div class="footer__3st-col">
+            <p class="footer__copyright">© 2002–2022, в новостной ленте используются материалы Информационного Агентства «Амур.инфо». Все права защищены.
+
+                Свидетельство о регистрации СМИ ИА № ФС77-79702 от 18.12.2020 г., выдано Федеральной службой по надзору за соблюдением законодательства в сфере массовых коммуникаций и охране культурного наследия.</p>
+        </div>
+        <div class="footer__4st-col">
+            <a href="#">
+                <img src="assets/img/statistics.svg" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/easyModal.js"></script>
+    <script src="assets/js/choices.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/lightpick.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

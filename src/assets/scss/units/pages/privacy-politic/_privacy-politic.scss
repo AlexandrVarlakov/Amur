@@ -1,0 +1,30 @@
+.p-politic__text-block{
+
+    a{
+        color: #00123E;
+        transition: 300ms;
+
+        &:hover{
+            color: #214BCE;
+        }
+    }
+
+    .h1{
+        color: #00123E;
+    }
+    .h2{
+        color: #00123E;
+        margin-bottom: 24px;
+
+        
+
+        @media (max-width: 480px){
+            margin-bottom: 10px;
+        }
+        
+    }
+}
+
+.p-politic__text-block + .p-politic__text-block{
+    margin-top: 40px;
+}

@@ -368,6 +368,26 @@ ul {
   text-transform: uppercase;
   color: #00123E; }
 
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #00123E;
+  white-space: pre-line; }
+  @media (max-width: 480px) {
+    .text {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 150%; } }
+
+@media (min-width: 1025px) {
+  .padding-content {
+    padding: 0 calc(0.0625rem + ((1vw - 10.25px) * 18.2609)); } }
+
+@media (min-width: 1600px) {
+  .padding-content {
+    padding: 0 6.625vw; } }
+
 .black {
   color: #000000; }
 
@@ -3382,6 +3402,39 @@ ul {
 .article-info__comments:hover path {
   fill: #214BCE; }
 
+.s-other-news {
+  margin-top: 6rem;
+  padding-top: 2.5rem;
+  padding-bottom: 6rem;
+  background-color: #F3F8FB; }
+  @media (max-width: 1024px) {
+    .s-other-news {
+      margin-top: 4rem;
+      padding-bottom: 4rem; } }
+  @media (max-width: 480px) {
+    .s-other-news {
+      margin-top: 2.5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem; } }
+  .s-other-news .title-category {
+    margin-bottom: 20px; }
+
+.other-news {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px; }
+  @media (max-width: 1024px) {
+    .other-news {
+      grid-template-columns: repeat(2, 1fr); }
+      .other-news .a-img-link:nth-child(n + 3) {
+        display: none; } }
+  @media (max-width: 540px) {
+    .other-news {
+      grid-template-columns: repeat(1, 1fr); } }
+  @media (max-width: 480px) {
+    .other-news {
+      grid-gap: 10px; } }
+
 .grid-news {
   display: grid;
   grid-gap: 40px 20px;
@@ -3773,6 +3826,27 @@ ul {
   .filter-articles__date::placeholder {
     opacity: 1;
     color: #9DB1D8; }
+
+.p-politic__text-block a {
+  color: #00123E;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
+  .p-politic__text-block a:hover {
+    color: #214BCE; }
+
+.p-politic__text-block .h1 {
+  color: #00123E; }
+
+.p-politic__text-block .h2 {
+  color: #00123E;
+  margin-bottom: 24px; }
+  @media (max-width: 480px) {
+    .p-politic__text-block .h2 {
+      margin-bottom: 10px; } }
+
+.p-politic__text-block + .p-politic__text-block {
+  margin-top: 40px; }
 
 .lightpick {
   position: absolute;
