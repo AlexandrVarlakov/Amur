@@ -18,23 +18,31 @@
             <img src="assets/img/logo.svg" alt="">
         </a>
 
-        <ul class="dmenu">
-            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Общество</a></li>
-            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Власть</a></li>
-            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Культура</a></li>
-            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Новости партнёров</a></li>
-            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Происшествия</a></li>
-            <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Россия и мир</a></li>
-            <li class="dmenu__item dmenu__item_dots">
-                <button class="btn-dotts-menu">
-                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 11C4 12.1046 3.10457 13 2 13C0.89543 13 0 12.1046 0 11C0 9.89543 0.89543 9 2 9C3.10457 9 4 9.89543 4 11Z" fill="white"/>
-                        <path d="M12 11C12 12.1046 11.1046 13 10 13C8.89543 13 8 12.1046 8 11C8 9.89543 8.89543 9 10 9C11.1046 9 12 9.89543 12 11Z" fill="white"/>
-                        <path d="M20 11C20 12.1046 19.1046 13 18 13C16.8954 13 16 12.1046 16 11C16 9.89543 16.8954 9 18 9C19.1046 9 20 9.89543 20 11Z" fill="white"/>
-                    </svg>
-                </button>
-                
-            </li>
+        <ul class="dmenu top-dmenu">
+            <div class="top-dmenu__inner">
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Общество</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Власть</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Культура</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Новости партнёров</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Происшествия</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Россия и мир</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Видео</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Свет, тепло, квитанции</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">PRO  Жизнь</a></li>
+                <li class="dmenu__item dmenu__item_link"><a href="#" class="dmenu__link">Лонгриды</a></li>
+
+                <li class="dmenu__item dmenu__item_dots">
+                    <button class="btn-dotts-menu">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 11C4 12.1046 3.10457 13 2 13C0.89543 13 0 12.1046 0 11C0 9.89543 0.89543 9 2 9C3.10457 9 4 9.89543 4 11Z" fill="white"/>
+                            <path d="M12 11C12 12.1046 11.1046 13 10 13C8.89543 13 8 12.1046 8 11C8 9.89543 8.89543 9 10 9C11.1046 9 12 9.89543 12 11Z" fill="white"/>
+                            <path d="M20 11C20 12.1046 19.1046 13 18 13C16.8954 13 16 12.1046 16 11C16 9.89543 16.8954 9 18 9C19.1046 9 20 9.89543 20 11Z" fill="white"/>
+                        </svg>
+                    </button>
+                    
+                </li>
+            </div>
+            
             
         </ul>
 
@@ -62,10 +70,16 @@
 
     <div class="header__dotts-menu-container">
         <ul class="dmenu dmenu_bottom">
-            <li class="dmenu__item "><a href="#" class="dmenu__link">Видео</a></li>
-            <li class="dmenu__item "><a href="#" class="dmenu__link">Свет, тепло, квитанции</a></li>
-            <li class="dmenu__item "><a href="#" class="dmenu__link">PRO  Жизнь</a></li>
-            <li class="dmenu__item "><a href="#" class="dmenu__link">Лонгриды</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link ">Общество</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link ">Власть</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link ">Культура</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link">Новости партнёров</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link">Происшествия</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link">Россия и мир</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link">Видео</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link">Свет, тепло, квитанции</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link">PRO  Жизнь</a></li>
+            <li class="dmenu__item hidden"><a href="#" class="dmenu__link">Лонгриды</a></li>
         </ul>
     </div>
 
@@ -83,7 +97,7 @@
         <form action="#" class="header__search-form">
 
             <input type="text" name="search-string" class="header__search-input" placeholder="Поиск по сайту">
-            <button class="transparent-btn search-send" disabled>Найти</button>
+            <button class="transparent-btn search-send" data-role="form-send" disabled>Найти</button>
         </form>
     </div>
 
@@ -1633,11 +1647,21 @@
         </div>
     </div>
 </footer>
+
+
+<button class="to-up">
+    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.74117 0.282896L0.282555 7.74115C-0.0941849 8.11821 -0.0941849 8.72882 0.282555 9.10589C0.659622 9.48295 1.27088 9.48295 1.64762 9.10589L8.42382 2.33L15.2001 9.10589C15.5768 9.48295 16.1881 9.48295 16.5648 9.10589C16.7533 8.91735 16.8476 8.6706 16.8476 8.42352C16.8476 8.17643 16.7533 7.92968 16.5648 7.74115L9.10623 0.282896C8.72917 -0.0941729 8.11786 -0.0941729 7.74117 0.282896Z" fill="#214BCE"/>
+    </svg>
+        
+</button>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/easyModal.js"></script>
     <script src="assets/js/choices.min.js"></script>
     <script src="assets/js/moment.min.js"></script>
     <script src="assets/js/lightpick.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/tippy-bundle.umd.js"></script>
     <script src="assets/js/main.js"></script>
     
 </body>

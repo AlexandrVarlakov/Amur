@@ -1,0 +1,138 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+    
+    <main>
+        @@include('templates/widget-and-advert.html')
+
+        <section class="section s-pages-list" >
+            <div class="section__inner">
+                
+                
+                <!--!!!!!!!!!!!!!!!!search-not-results!!!!!!!!!!!!!!!!!!!!!-->
+                <div class="block-with-aside_right search-not-results">
+
+                    <div class="block-with-aside__content-col">
+
+                        
+                        
+                        <h1 class="h1 dark-blue">Поиск</h1>
+
+                        <form class="search-form">
+                            <div class="search-form__input-wrap">
+                                <input type="text"  class="search-form__input"   name="search-string" id="search" placeholder="Введите текст для поиска...">
+                                <label for="search" class="search-form__label">Поиск по слову</label>
+                            </div>
+                            <div class="search-form__btn-wrap">
+                                <button class="search-form__send" disabled data-role="form-send">Найти</button>
+                            </div>
+                        </form>
+                        
+
+                        <div class="search-results ">
+                            <p class="not-results-text h3">Ничего не найдено.</p>
+
+                            <a href="#" class="advert">
+                                <picture>
+                                    <source srcset="assets/img/adverts/news-list/3-s.png" media="(max-width: 600px)">
+                                    <source srcset="assets/img/adverts/news-list/3-m.png" media="(max-width: 1024px)">
+                                    
+                                    <img src="assets/img/adverts/news-list/3.png" alt="">
+                                </picture>
+                            </a>
+
+                            
+                        </div>
+
+                        
+                    </div>
+                    <div class="block-with-aside__aside-col block-with-aside__aside-col_news-list">
+                        <a href="#"  class="advert">
+                            <picture>
+                                <source srcset="assets/img/adverts/news-list/4-s.png" media="(max-width: 600px)" />
+                                <source srcset="assets/img/adverts/news-list/4-m.png" media="(max-width: 1024px)" />
+                                
+                                <img src="assets/img/adverts/news-list/4.png" alt="">
+                            </picture>
+                        </a>
+                        
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section s-other-news">
+            <div class="section__inner">
+                <h2 class="title-category">Другие новости</h2>
+                <div class="other-news">
+                    <div class="a-img-link" >
+                        <div class="a-img-link__inner">
+                            <div class="a-img-link__content">
+                                <img class="a-img-link__img" src="assets/img/aside/3.png"/>
+
+                                
+                                <div class="a-img-link__text-content">
+                                    
+                                    <div class="a-img-link__title-block">                                        
+                                        <a class="h3" href="#">Психолог Яна Арутюнян-Кольцова: «Советую не читать новостную ленту»</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-img-link" >
+                        <div class="a-img-link__inner">
+                            <div class="a-img-link__content">
+                                <img class="a-img-link__img" src="assets/img/aside/4.png"/>
+                                <div class="a-img-link__text-content">
+                                    <div class="a-img-link__title-block">                                        
+                                        <a class="h3" href="#">Ко Дню пожилых: о здоровом старении рассказал врач-гериатр Виктор Бардов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-img-link" >
+                        <div class="a-img-link__inner">
+                            <div class="a-img-link__content">
+                                <img class="a-img-link__img" src="assets/img/aside/3.png"/>
+
+                                
+                                <div class="a-img-link__text-content">
+                                    
+                                    <div class="a-img-link__title-block">                                        
+                                        <a class="h3" href="#">Психолог Яна Арутюнян-Кольцова: «Советую не читать новостную ленту»</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-img-link" >
+                        <div class="a-img-link__inner">
+                            <div class="a-img-link__content">
+                                <img class="a-img-link__img" src="assets/img/aside/4.png"/>
+                                <div class="a-img-link__text-content">
+                                    <div class="a-img-link__title-block">
+                                        
+                                        <a class="h3" href="#">Ко Дню пожилых: о здоровом старении рассказал врач-гериатр Виктор Бардов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+
+    
+    
+@@include('templates/footer.html')
+@@include('templates/foot.html')

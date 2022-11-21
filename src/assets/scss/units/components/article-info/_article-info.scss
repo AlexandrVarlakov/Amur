@@ -21,6 +21,10 @@
     &:hover{
         color:  #00123E;
     }
+
+    @media (min-width: 1920px){
+        font-size: .52vw;
+    }
 }
 
 .article-info__views, .article-info__comments{

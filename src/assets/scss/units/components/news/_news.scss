@@ -132,16 +132,31 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px 20px;
     }
-    @media (max-width: 480px){
+    @media (max-width: 600px){
         grid-template-columns: 1fr;
         grid-gap: 40px 20px;
     }
 }
 
 .block-with-aside__aside-col_news-list{
-    @media (max-width: 480px){
-        grid-template-columns: 1fr;
-        grid-gap: 8px;
+
+    @media (max-width: 1024px){
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        a{
+            width: calc(50% - 10px);
+        }
+    }
+
+    @media (max-width: 600px){
+        
+        a{
+            width: 100%;
+        }
+        gap: 8px;
     }
 }
 
@@ -158,6 +173,10 @@
 .news-block{
     padding-top: 20px;
     padding-bottom: 20px;
+    @media (min-width: 1920px){
+        padding-top: 1.04vw;
+        padding-bottom: 1.04vw;
+    }
 }
 
 .news-block__title{
@@ -175,6 +194,13 @@
     @media (max-width: 414px){
         margin-bottom: .5rem;
     }
+
+    @media (min-width: 1920px){
+        font-size: .94vw;
+    }
+
+    
+        
 }
 
 .news-block__title-block{
@@ -185,6 +211,11 @@
     
     @media (max-width: 414px){
         flex-direction: column;
+    }
+
+    @media (min-width: 1920px){
+        margin-bottom:  1.04vw;
+        
     }
 }
 
@@ -257,6 +288,10 @@
     background: linear-gradient(0deg, rgba(0, 18, 62, 0.7) 0%, rgba(0, 18, 62, 0) 100%);
     padding: 0 1.5rem 1.5rem;
     width: 100%;
+
+    @media (min-width: 1920px){
+        padding: 0 1.25vw 1.25vw;
+    }
 }
 
 
@@ -477,6 +512,10 @@
     @media (max-width: 480px){
         margin-top: 6px;
     }
+
+    @media (min-width: 1920px){
+        font-size: .83vw;
+    }
 }
 
 
@@ -573,6 +612,10 @@
         &:hover{
             color: #00123E;
         }
+
+        @media (min-width: 1920px){
+            font-size: .73vw;
+        }
     }
 }
 
@@ -661,6 +704,11 @@
     &:hover{
         color: #66718B;;
     }
+
+
+    @media (min-width: 1920px){
+        font-size: 0.73vw;
+    }
 }
 
 .a-news-list__col{
@@ -695,6 +743,12 @@
 
     @media (max-width: 1024px){
         margin: auto 0 1.5rem;
+    }
+
+
+    @media (min-width: 1920px){
+        font-size: 0.73vw;
+        margin: 0.52vw 0 1.25vw;
     }
 }
 
@@ -829,6 +883,10 @@
             margin-bottom: 8px;
         }
     }
+
+    @media (min-width: 1920px){
+        padding: 1.25vw;
+    }
 }
 .survey__question-block{
     width: calc(50% + 20px);
@@ -937,7 +995,10 @@
 
             transition: 300ms;
 
-            
+            @media (min-width: 1920px){
+                margin-left: .63vw;
+                font-size: .73vw;
+            }
         }
 
         
@@ -958,6 +1019,10 @@
         @media (max-width: 1024px){
             margin-top: 12px;
         }
+
+        @media (min-width: 1920px){
+            margin-top: .94vw;
+        }
     }
 }
 .survey-form__btn-wrap{
@@ -966,7 +1031,9 @@
     @media (max-width: 1024px){
         margin-top: 25px;
     }
-
+    @media (min-width: 1920px){
+        margin-top: 1.25vw;
+    }
     
 }
 
@@ -1138,6 +1205,11 @@
 				height: 8px;
 			}
 		}
+
+        @media (min-width: 1920px){
+            width: .83vw;
+		    height: .83vw;
+        }
 	}
     
 	input[type="radio"]:checked + .c-radio__round{
@@ -1164,6 +1236,11 @@
     color: #9DB1D8;
 
     margin-top: 14px;
+
+    @media (min-width: 1920px){
+        margin-top: .73vw;
+        font-size: 0.63vw;
+    }
 }
 
 .blogs{
@@ -1288,6 +1365,10 @@
     letter-spacing: 0.01rem;
     color: #9DB1D8;
     margin-top: 6px;
+
+    @media (min-width: 1920px){
+        font-size: .63vw;
+    }
 }
 
 
@@ -1314,6 +1395,8 @@
             
         }
     }
+
+    
 }
 
 .opinions{
@@ -1341,6 +1424,10 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+
+    @media (min-width: 1920px){
+        padding: 1.25vw 1.25vw 2.08vw;
     }
 }
 
@@ -1397,6 +1484,10 @@
     @media (max-width: 600px){
         text-align: center;
     }
+
+    @media (min-width: 1920px){
+        margin-bottom: .52vw;
+    }
 }
 
 .opinion__author{
@@ -1409,6 +1500,10 @@
 
     @media (max-width: 600px){
         text-align: center;
+    }
+
+    @media (min-width: 1920px){
+        font-size: .63vw;
     }
 }
 

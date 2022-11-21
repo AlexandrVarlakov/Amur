@@ -13,19 +13,92 @@ const mobMenu = document.querySelector('.mob-menu');
   строка поиска
 */
 
+document.addEventListener('DOMContentLoaded', function(){
+  const dTopMenu = document.querySelector('.top-dmenu');
+  
+  const dTopMenuInner = document.querySelector('.top-dmenu__inner');
 
+  let menuWidth =  dTopMenu.offsetWidth;
+  let innerMenuWidth = dTopMenuInner.offsetWidth;
 
-const searchInput = document.querySelector('input[name = "search-string"]');
-const searchSendBtn = document.querySelector('.search-send');
+  const items = document.querySelectorAll('.dmenu__item.dmenu__item_link') ;
+  
+  const dottedMenuItems = document.querySelectorAll('.header__dotts-menu-container .dmenu__item');
 
-searchInput.addEventListener('input', function(){
-  if (this.value.length){
-    searchSendBtn.removeAttribute('disabled');
-
-  } else{
-    searchSendBtn.setAttribute('disabled', 'disabled');
+  if ( document.documentElement.clientWidth > 700 ){
+    
+    let itemPos = items.length - 1;
+  
+    while (innerMenuWidth > menuWidth){
+  
+        items[itemPos].classList.add('hidden');
+        dottedMenuItems[itemPos].classList.remove('hidden');
+        itemPos--;
+        innerMenuWidth = dTopMenuInner.offsetWidth;
+    }
   }
+
+
+
+  window.addEventListener('resize', function(){
+    if ( document.documentElement.clientWidth > 700 ){
+      let menuWidth =  dTopMenu.offsetWidth;
+      items.forEach(item => {
+        item.classList.remove('hidden')
+      })
+
+      dottedMenuItems.forEach(item => {
+        item.classList.add('hidden')
+      })
+
+      
+      innerMenuWidth = dTopMenuInner.offsetWidth;
+      let itemPos = items.length - 1;
+    
+      while (innerMenuWidth > menuWidth){
+        
+
+          items[itemPos].classList.add('hidden');
+          dottedMenuItems[itemPos].classList.remove('hidden');
+          itemPos--;
+          innerMenuWidth = dTopMenuInner.offsetWidth;
+      }
+      
+
+    }
+
+
+
+  })
+  
+
+
 })
+
+const searchInputs = document.querySelectorAll('input[name = "search-string"]');
+
+if ( searchInputs.length ){
+  searchInputs.forEach( searchInput => {
+    searchInput.addEventListener('input', function(){
+
+      const form = this.closest('form');
+      const searchSendBtn  =  form.querySelector('button[data-role="form-send"]');
+      
+      if (this.value.length){
+        searchSendBtn.removeAttribute('disabled');
+    
+      } else{
+        searchSendBtn.setAttribute('disabled', 'disabled');
+      }
+    })
+  } )
+}
+
+
+
+
+
+
 
 /*
   КОНЕЦ: строка поиска
@@ -231,6 +304,41 @@ let videoNews = new Swiper(".video-news", {
     }
   }
 })
+
+
+let sliderGallery = new Swiper(".slider-gallery", {
+  speed: 1000,
+  autoplay: {
+      delay: 5000,
+  },
+  slidesPerView: 1,
+  spaceBetween: 16,
+
+  
+  navigation: {
+      nextEl: '.sg-next',
+      prevEl: '.sg-prev',
+  },
+  pagination: {
+    type: 'fraction',
+    el: '.slider-gallery-pagination',
+  },
+  breakpoints: {
+    420: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    700: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        
+    },
+    
+  }
+})
+
+
+
 
 
 
@@ -588,3 +696,76 @@ if ( openFilterBtn ){
   })
 }
 
+let tipyInstance = tippy('.share-btn', {
+  trigger: "mouseenter click",
+  arrow: true,  
+  duration: [0, 500],
+  interactive: 75,
+  allowHTML: true,
+  appendTo: () => document.body,
+  content(reference) {
+      const id = reference.getAttribute('data-template');
+      const template = document.getElementById(id);
+      
+      return template.innerHTML;
+  },
+
+
+  placement: 'bottom',
+});
+
+
+const copyLink = document.querySelector('.copy-link');
+
+if ( copyLink ){
+
+  
+  
+
+  
+/*
+  copyLink.addEventListener('click', function(){
+    
+    
+  })*/
+}
+
+function copylink(){
+  if ( copyLink ){
+    const linkWasCopied = document.querySelectorAll('.link-was-copied');
+
+    let dataLink = copyLink.getAttribute('data-link');
+    
+    navigator.clipboard.writeText(dataLink)
+    .then(() => {
+      linkWasCopied[1].style.opacity = "1";
+      setTimeout(()=>{
+        linkWasCopied[1].style.opacity = "0";
+      }, 1000)
+    })
+    .catch(err => {
+      console.log('Something went wrong', err);
+    });
+    
+  }
+}
+
+
+let upBtn = document.querySelector('.to-up');
+
+if (upBtn){
+  document.addEventListener('scroll', function(){
+    if ( window.pageYOffset > document.documentElement.clientHeight / 2 ) {
+      upBtn.classList.add('show')
+      
+    } else{
+      upBtn.classList.remove('show')
+      
+    }
+  })
+  
+
+  upBtn.onclick = function(){
+    window.scrollTo(0, 0);
+  }
+}

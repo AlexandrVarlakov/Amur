@@ -37,16 +37,7 @@
 }
 
 .dmenu__item_link{
-    @media (max-width: 1240px){
-        &:nth-last-of-type(4n + 0){
-            display: none;
-        }
-    }
-    @media (max-width: 1024px){
-        &:nth-last-of-type(3n + 1){
-            display: none;
-        }
-    }
+  
 }
 
 
@@ -68,3 +59,28 @@
     }
 }
 
+.top-dmenu{
+    width: 50%;
+}
+
+.top-dmenu__inner{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    .dmenu__item{
+        flex-shrink: 0;
+    }
+}
+
+.dmenu__item.hidden{
+    display: none;
+}
+
+
+.header__dotts-menu-container{
+    .dmenu{
+        flex-wrap: wrap;
+        gap: 8px 0;
+    }
+}

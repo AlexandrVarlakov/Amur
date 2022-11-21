@@ -1,0 +1,120 @@
+.news-article{
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width: 480px){
+        gap: 24px;
+    }
+
+}
+
+.news-article__block{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media (max-width: 480px){
+        gap: 16px;
+    }
+
+}
+
+.news-article__title-block{
+    .news-date{
+        margin-bottom: 10px;
+    }
+
+    .h1{
+        margin-bottom: 12px;
+    }
+
+    .article-info{
+        margin-top: 0;
+    }
+}
+
+.news-article__tb-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 16px;
+}
+
+.share-btn{
+    display: flex;
+    align-items: center;
+    svg{
+        flex-shrink: 0;
+        margin-right: 6px;
+    }
+    path{
+        transition: 300ms;
+    }
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #9DB1D8;
+    transition: 300ms;
+
+    &:hover{
+        color: #0A34B8;;
+        path{
+            fill: #0A34B8;;
+        }
+    }
+
+}
+
+.news-article__bottom{
+    border-top: 1px solid #EBEFF5;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .transparent-btn{
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 480px){
+        flex-direction: column;
+        grid-gap: 24px;
+        .transparent-btn{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.news-article__tags{
+    gap: 14px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    a{
+        
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 145%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #9DB1D8;
+        transition: 300ms;
+        &:hover{
+            color: #00123E;
+        }
+
+        @media (min-width: 1920px){
+            font-size: 0.68vw;
+        }
+    }
+
+    a.active{
+        color: #214BCE;
+    }
+}
