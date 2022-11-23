@@ -352,13 +352,17 @@
 
 .link-on-cat{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 150%;
     text-align: right;
     color: #214BCE;
     transition: 300ms;
     &:hover{
         color: #00123E;
+    }
+
+    @media (min-width: 1920px){
+        font-size: .83vw;
     }
 
 }
@@ -605,7 +609,7 @@
 
     a{
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 150%;
         color: #214BCE;
         transition: 300ms;
@@ -614,7 +618,7 @@
         }
 
         @media (min-width: 1920px){
-            font-size: .73vw;
+            font-size: .83vw;
         }
     }
 }
@@ -732,7 +736,7 @@
     display: inline-block;
     font-weight: 600;
     line-height: 150%;
-    font-size: 14px;
+    font-size: 16px;
     color: #214BCE;
     margin: .625rem 0 1.5rem;
 
@@ -747,7 +751,7 @@
 
 
     @media (min-width: 1920px){
-        font-size: 0.73vw;
+        font-size: 0.83vw;
         margin: 0.52vw 0 1.25vw;
     }
 }
