@@ -155,6 +155,8 @@ ul {
   .advert img {
     width: 100%;
     max-width: 100%; }
+  .advert a {
+    display: block; }
 
 .advert-1 {
   width: 100%;
@@ -4059,6 +4061,9 @@ ul {
 .choices__item--choice.is-highlighted {
   background-color: #fff !important; }
 
+.choices__list[role=listbox] {
+  max-height: initial !important; }
+
 .choices__item:hover {
   background-color: rgba(33, 75, 206, 0.1) !important; }
 
@@ -4094,7 +4099,7 @@ ul {
   border-radius: 0 0 8px 8px !important;
   z-index: 1;
   overflow-y: scroll !important;
-  max-height: 200px;
+  max-height: 300px;
   scrollbar-width: thin;
   /* "auto" или "thin"  */
   scrollbar-color: #214BCE #EBEFF5; }
