@@ -769,3 +769,44 @@ if (upBtn){
     window.scrollTo(0, 0);
   }
 }
+
+let options = {
+  zIndex: 1000, 
+  //background: 'rgba(12, 130, 121, 0.5)', 
+  displayModalContainer: 'flex', 
+  displayModal: 'block', 
+
+  closeSelectors: ['.modal-contacts__close'], 
+  closeModalOnFogClick: true, 
+  showModalAnimation: 'fadeInBottom', 
+  closeModalAnimation: 'fadeOutTop',  
+  showModalDuration: '300ms',
+  closeModalDuration: '500ms',
+
+  showFogAnimation: 'fadeIn',
+  closeFogAnimation: 'fadeOut',
+  showFogDuration: '300ms',
+  closeFogDuration: '500ms',
+  documentCanScroll: false, 
+
+  // 'modal-first' - сначала скрывается модальное окно - затем туман
+  // 'along' - анимации закрытия тумана и окна происходят параллельно
+  closeMode: 'modal-first',
+  
+  
+  
+
+}
+
+
+let btnCallModalContacts = document.querySelectorAll('button[data-target="modal-contacts"]');
+
+var activeModal;
+
+if ( btnCallModalContacts.length ){
+  btnCallModalContacts.forEach( btn => {
+    btn.addEventListener('click', function(){
+      activeModal = new easyModal('.modal-contacts', options)
+    })
+  } )
+}

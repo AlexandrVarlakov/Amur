@@ -164,7 +164,7 @@
                 </a>
             </div>
             
-                <button class="transparent-btn small">Связаться с нами</button>
+                <button class="transparent-btn small" data-target="modal-contacts">Связаться с нами</button>
             
             
         </div>
@@ -233,13 +233,13 @@
                </a>
            </ul>
 
-           <a href="#" class="transparent-btn small">Связаться с нами</a>
+           <button class="transparent-btn small" data-target="modal-contacts">Связаться с нами</button>
        </div>
     </div>
 </section>
 <section class="section s-contact-us">
     <div class="section__inner">
-        <button class="transparent-btn small">Связаться с нами</button>
+        <button class="transparent-btn small" data-target="modal-contacts">Связаться с нами</button>
     </div>
 </section>
 <section class="section">
@@ -723,6 +723,46 @@
     </svg>
         
 </button>
+
+
+
+<div class="modal-contacts">
+    <div class="modal-contacts__close">
+        
+    </div>
+    <h3 class="h2 dark-blue t-center">Связаться с нами</h3>
+
+    <div class="modal-contacts__block">
+        <p class="modal-contacts__subtitle h3 dark-blue ">Редакция ИА «Амур.инфо»:</p>
+        <p class="text">Телефоны:</p>
+        <div class="modal-contacts__links-block">
+            
+            <a class="modal-link text" href="tel:+79145946625">+7 914 594-66-25</a>
+            <a class="modal-link text" href="tel:+74162771128">+7 (4162) 77-11-28</a>
+        </div>
+        <p class="text">E-mail:</p>
+        <div class="modal-contacts__links-block">
+            <a class="modal-link text" href="mailto:info@amur.info">info@amur.info</a>
+        </div>
+        
+        
+    </div>
+    <div class="modal-contacts__block">
+        <p class="modal-contacts__subtitle h3 dark-blue">Размещение рекламы:</p>
+        <p class="text">Телефоны:</p>
+        <div class="modal-contacts__links-block">
+            
+            <a class="modal-link text" href="tel:+74162222444">+7 (4162) 222-444</a>
+            <a class="modal-link text" href="tel:+79145613373">+79145613373</a>
+        </div>
+        <p class="text">E-mail:</p>
+        <div class="modal-contacts__links-block">
+            <a class="modal-link text" href="mailto:reklama@amur.info">reklama@amur.info</a>
+        </div>
+        
+        
+    </div>
+</div>
     <script src="assets/js/swiper-bundle.min.js"></script>
     
     <script src="assets/js/choices.min.js"></script>
@@ -730,6 +770,7 @@
     <script src="assets/js/lightpick.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/tippy-bundle.umd.js"></script>
+    <script src="assets/js/easyModal.js"></script>
     <script src="assets/js/main.js"></script>
     
 </body>
